@@ -42,7 +42,16 @@
     </section>
     <section class="instructions" id="ajuda">
       <h2>Conexões e atualizações</h2>
-      <details><summary>Como conectar o ChatGPT?</summary><p>Abra <b>Conexões / MCP</b> no aplicativo e siga os passos do Túnel. Use o ID associado ao workspace autorizado e a chave Runtime fornecida pela equipe responsável.</p></details>
+      <details>
+        <summary>Como criar um túnel na minha conta pessoal?</summary>
+        <p>Crie um ID para cada instalação do SPA-MCP que ficará conectada. Se você usa dois computadores, dê um nome e um ID a cada um.</p>
+        <ol>
+          <li>Entre na plataforma da OpenAI e selecione sua organização pessoal. Abra <a href="https://platform.openai.com/settings/organization/tunnels">Túneis</a>, crie um túnel com um nome como <b>SPA-MCP — Notebook</b> e associe-o ao seu ambiente pessoal do ChatGPT. Copie o ID.</li>
+          <li>Abra <a href="https://platform.openai.com/settings/organization/api-keys">Chaves Runtime</a> na mesma organização. Crie uma chave restrita a <b>Tunnels Read</b> e <b>Tunnels Use</b>.</li>
+          <li>No SPA-MCP, abra <b>Conexões / MCP</b>, cole o ID e a chave, confirme o acesso e clique em <b>Salvar e iniciar</b>. Cole a chave somente no aplicativo.</li>
+          <li>No ChatGPT na web, abra <b>Plugins → Adicionar servidor MCP personalizado</b>, escolha <b>Túnel</b> e use o mesmo ID. Faça a primeira chamada com <b>diagnosticar_spa</b>.</li>
+        </ol>
+      </details>
       <details><summary>Como atualizar?</summary><p>No aplicativo instalado pelo canal público, abra <b>Atualizações</b> e selecione <b>Verificar agora</b>. Conclua seu trabalho antes de clicar em <b>Instalar e reabrir</b>.</p></details>
       <details><summary>Onde encontro as notas de versão?</summary><p>Consulte as <a href="https://github.com/Joao-Oliveira-PGE/SPA-MCP-Downloads/releases">releases da Beta pública no GitHub</a>.</p></details>
     </section>
