@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Baixe a Beta pública do SPA-MCP para Windows e veja como começar.">
+  <title>SPA-MCP para Windows</title>
+  <link rel="icon" href="icone_windows_escuro.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="download.js" defer></script>
+</head>
+<body>
+  <header class="frame">
+    <a class="brand" href="#inicio"><img src="icone_windows_escuro.png" width="36" height="36" alt="">SPA-MCP</a>
+    <nav aria-label="Nesta página"><a href="#instalacao">Instalação</a><a href="#ajuda">Ajuda</a></nav>
+  </header>
+  <main id="inicio" class="frame">
+    <section class="hero" aria-labelledby="title">
+      <div>
+        <p class="channel">BETA PÚBLICA PARA WINDOWS</p>
+        <h1 id="title">SPA-MCP</h1>
+        <p class="intro">Abra o SPA, consulte suas mesas e organize os expedientes em uma estação de trabalho para Windows.</p>
+      </div>
+      <section class="download" aria-labelledby="download-title">
+        <h2 id="download-title">Instalador para Windows</h2>
+        <p id="download-status" role="status">Confira as versões disponíveis no GitHub.</p>
+        <a id="download" class="button" href="https://github.com/Joao-Oliveira-PGE/SPA-MCP-Downloads/releases">Consultar versões</a>
+        <p class="meta">Windows x64 · Atualizações públicas sem token GitHub</p>
+        <details id="checksum" hidden>
+          <summary>Ver SHA-256 do instalador</summary>
+          <code id="digest"></code>
+        </details>
+      </section>
+    </section>
+    <section class="instructions" id="instalacao">
+      <h2>Primeiros passos</h2>
+      <ol>
+        <li><strong>Instale.</strong> Baixe o EXE, abra o instalador e siga as instruções. Em estações gerenciadas, siga a orientação da TI.</li>
+        <li><strong>Entre no SPA.</strong> Abra o SPA-MCP pelo menu Iniciar. Em <b>Navegador SPA</b>, abra o SPA e entre na sua conta.</li>
+        <li><strong>Carregue sua mesa.</strong> Em <b>Caixa de trabalho</b>, atualize a lista de pessoas, selecione quem deseja consultar e carregue as mesas.</li>
+      </ol>
+    </section>
+    <section class="instructions" id="ajuda">
+      <h2>Conexões e atualizações</h2>
+      <details><summary>Como conectar o ChatGPT?</summary><p>Abra <b>Conexões / MCP</b> no aplicativo e siga os passos do Túnel. Use o ID associado ao workspace autorizado e a chave Runtime fornecida pela equipe responsável.</p></details>
+      <details><summary>Como atualizar?</summary><p>No aplicativo instalado pelo canal público, abra <b>Atualizações</b> e selecione <b>Verificar agora</b>. Conclua seu trabalho antes de clicar em <b>Instalar e reabrir</b>.</p></details>
+      <details><summary>Onde encontro as notas de versão?</summary><p>Consulte as <a href="https://github.com/Joao-Oliveira-PGE/SPA-MCP-Downloads/releases">releases da Beta pública no GitHub</a>.</p></details>
+    </section>
+  </main>
+  <footer class="frame">SPA-MCP para Windows</footer>
+</body>
+</html>
